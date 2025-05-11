@@ -396,6 +396,10 @@ nav:has(input:checked)+.nav-layer {
     background-color: #0078ff;
 }
 
+.blog-details .comment::before {
+    height: 100%;
+}
+
 .blog-details .comment p a {
     color: #0078ff;
 }
@@ -420,11 +424,6 @@ nav:has(input:checked)+.nav-layer {
 
 .blog-details form button:hover {
     box-shadow: 0 0 0 5px #cde1f8;
-}
-
-.blog-details .inner2 .review img {
-    width: 80px;
-    height: 80px;
 }
 
 .blog-details .inner2 .review .date {
