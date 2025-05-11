@@ -1,0 +1,90 @@
+/* ********************************* start md ********************************* */
+
+@media (min-width: 768px) {
+    header.home .content h1 {
+        font-size: 4.5rem;
+    }
+
+    .header2 .content h1 {
+        font-size: 3.5rem;
+    }
+
+    header.home .content span {
+        font-size: 2.5rem;
+    }
+
+    .work .head {
+        width: 66.666%;
+    }
+}
+
+/* ********************************* end md ********************************* */
+
+/* ********************************* start lg ********************************* */
+
+@media (min-width: 992px) {
+
+    .px-128 {
+        padding-inline: 8rem;
+    }
+
+    header,
+    .header2,
+    .state,
+    .testimonials {
+        background-attachment: fixed;
+    }
+
+    .nav-item .nav-link {
+        color: #fff;
+    }
+
+    .dropdown-menu2 .dropdown-menu {
+        display: block;
+        opacity: 0;
+        right: 130px;
+        top: 40px;
+        transition: all 0.2s ease;
+        -webkit-transition: all 0.2s ease;
+        -moz-transition: all 0.2s ease;
+        -ms-transition: all 0.2s ease;
+        -o-transition: all 0.2s ease;
+    }
+
+    .dropdown-menu2:hover .dropdown-menu {
+        right: 145px;
+        opacity: 1;
+    }
+
+    .nav-item .active::before,
+    .nav-item .nav-link::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 24px;
+        width: 0%;
+        height: 2px;
+        background-color: #fff;
+        transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+    }
+
+    body:has(.header2) nav .nav-item .active::before {
+        width: 0;
+    }
+
+
+    .nav-item .active::before,
+    .navbar .nav-item .nav-link:hover::before {
+        width: 50%;
+    }
+
+    .work .head {
+        width: 75%;
+    }
+}
+
+/* ********************************* end md ********************************* */

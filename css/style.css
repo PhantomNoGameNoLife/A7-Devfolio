@@ -1,0 +1,464 @@
+/* ********************************* start general css ********************************* */
+.pt-64 {
+    padding-top: 4rem;
+}
+
+.py-64 {
+    padding-block: 4rem;
+}
+
+.py-128 {
+    padding-block: 8rem;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #4e4e4e;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+    color: #1e1e1e;
+}
+
+.scroll-up {
+    width: 40px;
+    height: 40px;
+}
+
+.heading {
+    margin-bottom: 4rem;
+}
+
+.heading h2 {
+    font-size: 3rem;
+}
+
+.heading p::before {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    width: 40px;
+    height: 5px;
+    background-color: #0078ff;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+/* ********************************* end general css ********************************* */
+
+
+
+/* ********************************* start header ********************************* */
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./../img/hero-bg.jpg) no-repeat center center/cover;
+}
+
+header .content {
+    width: 80%;
+}
+
+header .content h1 {
+    font-size: 3rem;
+}
+
+.header2 {
+    height: 350px;
+    background: linear-gradient(rgba(0, 119, 255, 0.7), rgba(0, 119, 255, 0.7)), url(./../img/overlay-bg.jpg) no-repeat center center/cover;
+}
+
+.header2 .content {
+    width: 100%;
+}
+
+.header2 p {
+    color: #cde1f8;
+}
+
+/* ********************************* end header ********************************* */
+
+
+/* ********************************* start navbar ********************************* */
+.nav-bg-color {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.logo-font {
+    font-size: 1.75rem;
+}
+
+nav .close,
+nav input:checked~.open,
+.dropdown-menu2 .dropdown-menu {
+    display: none;
+}
+
+nav input:checked+.close,
+.dropdown-menu2:hover .dropdown-menu {
+    display: block;
+}
+
+nav:has(input:checked) .navbar-nav {
+    background-color: #fff;
+    padding-block: .625rem;
+}
+
+nav:has(input:checked) ul a {
+    color: #4e4e4e;
+    padding: .625rem 1.25rem;
+}
+
+nav:has(input:checked) .nav-link.active,
+nav:has(input:checked) .nav-link:hover,
+nav:has(input:checked) .nav-link.show,
+nav:has(input:checked) .dropdown-item:hover {
+    color: #0078ff;
+}
+
+nav:has(input:checked)+.nav-layer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(78, 78, 78, 0.9);
+}
+
+.dropdown-menu {
+    font-size: .875rem;
+}
+
+.nav-item {
+    position: relative;
+}
+
+/* ********************************* end navbar ********************************* */
+
+/* ********************************* start about ********************************* */
+.about h4,
+.about ul span {
+    font-size: 1.125rem;
+}
+
+.about h3,
+.contact h3 {
+    font-size: 2rem;
+}
+
+.about h3::before,
+.contact h3::before,
+.blog-details .inner2 h2::before,
+.blog-details .inner3 h2::before {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 102px;
+    height: 3px;
+    background-color: #0078ff;
+}
+
+.about .b-shadow {
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.about .progress {
+    height: 12px;
+}
+
+/* ********************************* end about ********************************* */
+
+/* ********************************* start services ********************************* */
+.services .circle,
+.social-media li {
+    height: 100px;
+    width: 100px;
+    box-shadow: 0 0 0 10px #0078ff;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+.services .card:hover .circle,
+.social-media li:hover {
+    color: #fff;
+    background-color: #0078ff;
+    box-shadow: 0 0 0 10px #cde1f8;
+}
+
+/* ********************************* end services ********************************* */
+
+/* ********************************* start state ********************************* */
+.state {
+    background: linear-gradient(rgba(0, 119, 255, 0.7), rgba(0, 119, 255, 0.7)), url(./../img/counters-bg.jpg) no-repeat center center/cover;
+}
+
+.state .circle {
+    height: 60px;
+    width: 60px;
+    box-shadow: 0 0 0 10px #cde1f8;
+}
+
+/* ********************************* end state ********************************* */
+
+/* ********************************* start work ********************************* */
+.work .card figure {
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.work .card img {
+    transition: transform 1s ease-in-out;
+    -webkit-transition: transform 1s ease-in-out;
+    -moz-transition: transform 1s ease-in-out;
+    -ms-transition: transform 1s ease-in-out;
+    -o-transition: transform 1s ease-in-out;
+}
+
+.work .card:hover img {
+    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
+}
+
+.work .card p {
+    color: #4e4e4e;
+    font-size: 0.8rem;
+}
+
+.work .card span {
+    color: #0078ff;
+}
+
+.work .card .card-padding {
+    padding: 2rem 1.25rem 1rem;
+}
+
+.work .card a {
+    width: 40px;
+    height: 40px;
+}
+
+/* ********************************* end work ********************************* */
+
+/* ********************************* start details ********************************* */
+
+.details .carousel-indicators button {
+    border: #0078ff 2px solid;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.details .carousel-indicators button.active {
+    background-color: #0078ff;
+}
+
+.details ul span {
+    color: #4e4e4e;
+}
+
+/* ********************************* end details ********************************* */
+
+/*  ****************************** start testimonials ******************************  */
+.testimonials {
+    background: linear-gradient(rgba(0, 119, 255, 0.7), rgba(0, 119, 255, 0.7)), url(./../img/overlay-bg.jpg) no-repeat center center/cover;
+}
+
+.testimonials img {
+    width: 150px;
+    height: 150px;
+}
+
+.testimonials .img2 {
+    width: 102px;
+}
+
+.carousel-indicators.slider-button {
+    left: 35%;
+    bottom: -55px;
+}
+
+.carousel-indicators.slider-button button {
+    width: 13px;
+    height: 13px;
+    background-color: #fff;
+}
+
+/*  ****************************** end testimonials ******************************  */
+
+/* ********************************* start blog ********************************* */
+
+.blog .card-body .btn {
+    top: -15px;
+    font-size: .6875rem;
+}
+
+.blog .card-footer img {
+    width: 32px;
+    height: 32px;
+    margin-right: 4px;
+}
+
+.blog .card-body h3 a,
+.blog .card-footer a {
+    color: #1e1e1e;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+.blog .card-body h3 a:hover,
+.blog .card-footer a:hover {
+    color: #0078ff;
+}
+
+.blog .card-body p {
+    color: #4e4e4e;
+}
+
+.blog .card-footer p {
+    font-size: 1rem;
+}
+
+/* ********************************* end blog ********************************* */
+
+/* ********************************* start contact ********************************* */
+.contact {
+    background-color: rgba(0, 119, 255, 0.7);
+}
+
+.contact p {
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+
+.contact .contact-details i {
+    color: rgba(0, 119, 255, 0.7)
+}
+
+.contact .social-media {
+    width: 66.666%;
+}
+
+.contact .social-media li {
+    width: 36px;
+    height: 36px;
+    color: #1e1e1e;
+    box-shadow: 0 0 0 5px #0078ff;
+}
+
+.contact .social-media li i {
+    color: #1e1e1e;
+    transition: all 0.5 ease-in-out;
+    -webkit-transition: all 0.5 ease-in-out;
+    -moz-transition: all 0.5 ease-in-out;
+    -ms-transition: all 0.5 ease-in-out;
+    -o-transition: all 0.5 ease-in-out;
+}
+
+.contact .social-media li:hover i {
+    color: #fff;
+}
+
+
+/* ********************************* end contact ********************************* */
+
+/* ********************************* start comment ********************************* */
+.blog-details .comment::before,
+.blog-details .comment+p span::before,
+.blog-details .blog-head::before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0;
+    height: 25px;
+    width: 4px;
+    background-color: #0078ff;
+}
+
+.blog-details .comment p a {
+    color: #0078ff;
+}
+
+.blog-details .comment+p span::before,
+.blog-details .blog-head::before {
+    height: 100%;
+}
+
+.blog-details .blog-head::before {
+    left: -15px;
+    width: 5px;
+}
+
+.blog-details form button {
+    transition: all 500ms ease;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+}
+
+.blog-details form button:hover {
+    box-shadow: 0 0 0 5px #cde1f8;
+}
+
+.blog-details .inner2 .review img {
+    width: 80px;
+    height: 80px;
+}
+
+.blog-details .inner2 .review .date {
+    color: #1e1e1e;
+}
+
+.blog-details .list-blog a {
+    color: #1e1e1e;
+        transition: all 500ms ease;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+}
+
+.blog-details .list-blog a:hover {
+    color: #0078ff;
+}
+
+.blog-details .list-blog li::before {
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    width: 10px;
+    height: 1px;
+    background-color: #0078ff;
+}
+
+/* ********************************* end comment ********************************* */
+
+/* ********************************* start footer ********************************* */
+footer {
+    background: #0062d3;
+}
+
+/* ********************************* end footer ********************************* */
